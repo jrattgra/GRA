@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: purple;
+    background-image: -webkit-linear-gradient(270deg,rgba(128,0,128,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(128,0,128,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(128,0,128,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(128,0,128,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    height: 100vh;
+    color: #FFFFFF;
+}
+wrapper {
+    width: 1920px;
+}
+wrapper ul ol {
+    padding-top: 0px;
+    margin-top: -260px;
+    padding-bottom: 300px;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-weight: bold;
+}
+h1 {
+    display: inline-block;
+}
+footer {
+}
+body wrapper img {
+    margin-left: 20px;
+}
+.home h2 {
+    margin-left: 20px;
+}
+.logo {
+    margin: 20px;
+    vertical-align: middle;
+}
+nav a li {
+    padding: 20px;
+    background-color: white;
+    display: inline-block;
+}
+nav a li:hover {
+    background-color: #20FF00;
+}
+main {
+}
+.home {
+}
+.merch img {
+    margin-left: 20px;
+    width: 1000px;
+    height: 400px;
+}
+.music #AmazonMusicEmbedB00P1K17EW {
+    margin-left: 20px;
+    width: 1000px;
+    height: 400px;
+}
+.photos img {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+}
+body wrapper img {
+    display: inline-block;
+}
+wrapper main iframe {
+    margin-left: 20px;
+}
