@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Switzerland | Jaden Rattigan, 2026</title>
+	<script src="https://kit.fontawesome.com/3b5aa8b7f0.js" crossorigin="anonymous"></script>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(methode-times-prod-web-bin-7510fc3d-ce85-4200-a7cf-49d6f22ea9e7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+}
+header {
+    height: 100px;
+    background-color: aqua;
+}
+wrapper {
+    margin: auto;
+    width: 1366px;
+    display: block;
+}
+#Tabs1 ul {
+    border: none;
+    background-color: transparent;
+    color: orange;
+}
+#Tabs1 ul li {
+    text-align: center;
+    background-image: none;
+    color: orange;
+    background-color: white;
+}
+#Tabs1 ul li a {
+    color: orange;
+}
+#Tabs1 {
+    background-color: rgba(255,255,255,0.50);
+}
+#tabs-1 div {
+    display: grid;
+	grid-template-columns: 16% 16% 16% 16% 16% 10%;
+	gap: 10px;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+	<wrapper>
+		<h1>Switzerland</h1>
+	</wrapper>
+</header>
+<wrapper></wrapper>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1"><i class="fa-solid fa-plane"></i><br>
+Flights</a></li>
+<li><a href="#tabs-2"><i class="fa-solid fa-hotel"></i><br>
+Hotels</a></li>
+<li><a href="#tabs-3"><i class="fa-solid fa-car-side"></i><br>
+Cars</a></li>
+<li><a href="#tabs-4"><i class="fa-solid fa-suitcase"></i><br>
+Packages</a></li>
+<li><a href="#tabs-5"><i class="fa-solid fa-cable-car"></i><br>
+Activities</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Find your flights</p>
+    <div>
+      <input type="text" placeholder="Leaving from">
+      <input type="text" placeholder="Going to"><input type="date"><input type="date"><select>
+        <option value="0" selected="selected">Number of travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+      <input type="submit" value="Search">
+    </div>
+  </div>
+	
+	<div id="tabs-2">
+	  <p>Find your hotels</p>
+		 <div>
+      <input type="text" placeholder="Check In">
+      <input type="text" placeholder="Check Out"><input type="date"><input type="date"><select>
+        <option value="0" selected="selected">Number of travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+      <input type="submit" value="Search">
+    </div>
+    </div>
+	<div id="tabs-3">
+	  <p>Find your car rental</p>
+		 <div>
+      <input type="text" placeholder="Pick-up">
+      <input type="text" placeholder="Same as pick-up"><input type="date"><input type="date"><select>
+        <option value="0" selected="selected">Number of travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+      <input type="submit" value="Search">
+    </div>
+    </div>
+	<div id="tabs-4">
+	  <p>Bundle and save</p>
+		 <div>
+      <input type="text" placeholder="Leaving from">
+      <input type="text" placeholder="Going to"><input type="date"><select>
+        <option value="0" selected="selected">Number of travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+      <input type="submit" value="Search">
+    </div>
+    </div>
+	<div id="tabs-5">
+	  <p>Find things to do</p>
+		 <div>
+      <input type="text" placeholder="Going to"><input type="date">
+      <input type="submit" value="Search">
+    </div>
+    </div>
+    </div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
