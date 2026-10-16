@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Navigation | Jaden Rattigan, 2026</title>
+	<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<style type="text/css">
+body {
+	margin: 0;
+	background-color: #90EE90;
+	padding: 20px;
+}
+wrapper {
+	width: 80%;
+	margin: auto;
+	display: block;	
+	background-color: rgba(255,255,255,0.50);
+	padding-left: 0px;
+	}
+section {
+	height: 500px;
+	
+	}
+
+.topnav {
+  background-color: #333;
+}
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color:red;
+}
+.topnav.responsive a{
+    display:block;
+}
+.topnav.responsive a:not(:first-child) {
+     display: none;
+}
+.topnav .fa-bars {
+    display: none;
+}
+.topnav .fa-times {
+    display: block;
+}
+.topnav.responsive .fa-bars {
+    display: block;
+}
+.topnav.responsive .fa-times {
+    display: none;
+}
+.container img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    display: grid;
+	grid-template-columns: auto;
+	gap: 16px;
+}
+#services img {
+    width: 100%;
+    height: auto;
+	display: grid;
+	grid-template-columns: auto;
+	gap: 16px;
+}
+#contact img {
+    width: 100%;
+    display: grid;
+    height: auto;
+	grid-template-columns: auto;
+	gap: 16px;
+}
+@media (min-width:600px) {
+	.topnav .fa.fa-bars{display:none;}
+.topnav a:not(:first-child),.topnav.responsive a:not(:first-child) {
+    display:inline-block;
+     }
+.topnav .icon {
+     display:none;
+     }
+	.container {
+	grid-template-columns: 50% 50%;
+	}
+}	
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header>
+    <h1>Yellowstone National Park</h1>
+    <nav class="topnav responsive" id="myTopnav">
+  <a href="javascript:void(0);" class="icon"
+     onclick="myFunction()">
+  <i class="fa fa-bars"></i><i class="fa fa-times"></i>
+   <a href="#home"><li>Home</li></a>
+        <a href="#services"><li>Services</li></a>
+        <a href="#contact"><li>Contact</li></a>
+  </a>
+</nav>
+     
+  </header>
+  <main>
+    <section id="home">
+<h2>Home</h2>
+<div class="container"><img src="29EB105C-BCE3-4859-9B83F22E1091AA2F.jpg" alt="" width="2048" height="1365">
+  <p>For the Benefit and Enjoyment of the People</p>
+</div>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <div class="container"><img src="Yellowstone.jpg" alt="" width="486" height="324">
+        <p>This is the content for Layout P Tag</p>
+      Content for New div Tag Goes Here</div>
+</section>
+    <section id="contact">
+<h2>Contact</h2>
+      <div class="container"><img src="shutterstock_125026373-fotor-20240328153331.jpg" alt="" width="3888" height="2592">
+        <p>This is the content for Layout P Tag</p>
+      Content for New div Tag Goes Here</div>
+    </section>
+  </main>
+  <footer></footer>
+</wrapper>
+</body>
+</html>
