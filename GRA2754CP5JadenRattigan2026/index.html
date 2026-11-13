@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag-and-Drop Game | Jaden Rattigan</title>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+	@font-face {
+    font-family: 'star_jediregular';
+    src: url('starjedi-webfont.woff2') format('woff2'),
+         url('starjedi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    margin: 0;
+    background-color: darkgrey;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: white;
+}
+main {
+    display: grid;
+	grid-template-columns: 48% 48%;
+	gap:16px;
+}
+#blades {
+    display: grid;
+	grid-template-columns: 32% 32% 32%;
+	gap:16px;
+}
+#blades div {
+    height: 200px;
+    background-color: lightgrey;
+    text-align: center;
+}
+#blades div img {
+    height: 100%;
+    width: auto;
+}
+#handle img {
+    padding-bottom: 125px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+}
+#handle {
+    background-color: lightblue;
+    background-image: url(Handle.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1 {
+    padding: 20px;
+	font-family: 'star_jediregular';
+}
+footer {
+    padding: 20px;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header>
+    <h1>Drag the Lightsaber Blade onto the Handle</h1>
+  </header>
+  <main>
+    <section id="handle" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+	 <section id="blades">
+	   <div id="drag1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="blue.png" alt="" width="19" height="62" id="blue" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="green.png" alt="" width="19" height="62" id="green" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="red.png" alt="" width="19" height="62" id="red" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="purple.png" alt="" width="19" height="62" id="purple" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="yellow.png" alt="" width="19" height="62" id="yellow" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag6" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="white.png" alt="" width="19" height="62" id="white" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag7" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="black.png" alt="" width="19" height="62" id="black" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag8" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="orange.png" alt="" width="19" height="62" id="orange" draggable="true" ondragstart="drag(event)"></div>
+	   <div id="drag9" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="gold.png" alt="" width="19" height="62" id="gold" draggable="true" ondragstart="drag(event)"></div>
+	 </section>
+  </main>
+  <footer>© 2026, Jaden Rattigan
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+	
+</body>
+</html>
